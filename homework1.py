@@ -37,3 +37,4 @@ john_friends = ['Alice', 'Taylor', 'Tyron', 'Jennifer', 'Taylor']
 marta_friends = ['Gerald', 'Harold', 'Triss', 'Harold']
 print(set(john_friends))
 print(set(marta_friends))
+
