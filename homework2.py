@@ -27,15 +27,14 @@ calc_3 = input("Що робимо? ")
 a = calc_1
 b = calc_2
 if calc_3 == "+":
-        print(a + b)
+    print(a + b)
 elif calc_3 == "-":
-        print(a - b)
+    print(a - b)
 elif calc_3 == "*":
-        print(a * b)
+    print(a * b)
 elif b == 0 and calc_3 == "/":
-        print("Ділення на 0")
-elif calc_3 == "/":
-        print(a / b)
+    print("Ділення на 0")
+if calc_3 == "/":
+    print(a / b)
 else:
-        print("Введіть правильний символ")
-
+    print("Введіть правильний символ")
