@@ -6,10 +6,10 @@ for item in ip_list:
         print("Неправильна IP-адреса")
         break
     if count_check != 4:
-        print("Неправильна IP-адреса1")
+        print("Неправильна IP-адреса")
     elif ip_adr.count(".") != 3:
-        print("Неправильна IP-адреса2")
+        print("Неправильна IP-адреса")
     if int(item) > 255:
-        print("Неправильна IP-адреса3")
+        print("Неправильна IP-адреса")
         break
 
