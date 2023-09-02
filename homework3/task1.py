@@ -3,3 +3,4 @@ if palindrome == palindrome[::-1]:
     print("+")
 else:
     print("-")
+
