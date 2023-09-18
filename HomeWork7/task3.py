@@ -17,3 +17,4 @@ if __name__ == '__main__':
         display_box(width_1, height_1, character_1)
     else:
         display_box(width_1, height_1)
+
