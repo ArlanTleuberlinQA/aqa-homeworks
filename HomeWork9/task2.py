@@ -78,3 +78,4 @@ if __name__ == "__main__":
     print(worker1.display_info())
     print(f'Зарплата за рік: {worker1.calculate_yearly_income()}$')
 
+
