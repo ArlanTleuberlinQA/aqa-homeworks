@@ -25,7 +25,8 @@ class Company:
         self.founder = founder
         self.ceo = ceo
 
-    def get_revenue(self):
+    @property
+    def get_revenue(self) -> int:
         """
         Гетер для отримання річного доходу компанії.
 
@@ -33,13 +34,9 @@ class Company:
         """
         return self.__revenue
 
+    @get_revenue.setter
     def set_revenue(self, revenue):
-        """
-        Сетер для встановлення річного доходу компанії.
 
-
-        revenue:  Новий річний дохід компанії в мільярдах доларів.
-        """
         if revenue >= 0:
             self.__revenue = revenue
         else:
@@ -78,7 +75,7 @@ if __name__ == "__main__":
     apple = Company("Apple Inc.", 1976, "Cupertino, California", "Технології", 394.46, "Tim Cook", "Steve Jobs")
     print(apple)
     print(f"Вік компанії: {Company.get_age(2023, apple.founding_year)} роки")
-    print(f"Річний дохід: {apple.get_revenue()} мільярда доларів")
+    print(f"Річний дохід: {apple.get_revenue} мільярда доларів")
     # Змінюємо значення річного доходу компанії
-    apple.set_revenue(400)
-    print(f"Новий річний дохід: {apple.get_revenue()} мільярда доларів")
+    apple.set_revenue = 400
+    print(f"Новий річний дохід: {apple.get_revenue} мільярда доларів")
