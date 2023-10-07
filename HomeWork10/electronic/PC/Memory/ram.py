@@ -1,9 +1,9 @@
-from HomeWork10.electronic.PC.computer import Laptop
+from HomeWork10.electronic.info import HardwareInfo
 
 
-class RAM(Laptop):
+class RAM(HardwareInfo):
     def __init__(self, brand, model, capacity, speed):
-        super().__init__(brand, model, cpu=None, gpu=None, ram=None, storage=None)
+        super().__init__(brand, model)
         self.capacity = capacity
         self.speed = speed
 

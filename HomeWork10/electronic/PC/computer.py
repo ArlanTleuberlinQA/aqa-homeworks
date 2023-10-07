@@ -1,7 +1,11 @@
-from HomeWork10.electronic.info import Info
+from HomeWork10.electronic.info import HardwareInfo
+from HomeWork10.electronic.PC.CPU.cpu import CPU
+from HomeWork10.electronic.PC.Videocard.gpu import GPU
+from HomeWork10.electronic.PC.Memory.ram import RAM
+from HomeWork10.electronic.PC.Memory.storage import Storage
 
 
-class Laptop(Info):
+class Laptop(HardwareInfo):
     def __init__(self, brand, model, cpu, gpu, ram, storage):
         super().__init__(brand, model)
         self.cpu = cpu
@@ -24,10 +28,7 @@ class Laptop(Info):
 
 
 if __name__ == "__main__":
-    from HomeWork10.electronic.PC.CPU.cpu import CPU
-    from HomeWork10.electronic.PC.Videocard.gpu import GPU
-    from HomeWork10.electronic.PC.Memory.ram import RAM
-    from HomeWork10.electronic.PC.Memory.storage import Storage
+
 
     gaming_laptop = Laptop(
         brand="ASUS",

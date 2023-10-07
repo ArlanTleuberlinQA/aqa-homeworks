@@ -1,10 +1,9 @@
-from HomeWork10.electronic.PC.computer import Laptop
-from HomeWork10.electronic.info import Info
+from HomeWork10.electronic.info import HardwareInfo
 
 
-class CPU(Laptop, Info):
+class CPU(HardwareInfo):
     def __init__(self, brand, model, cores, clock_speed):
-        super().__init__(brand, model, cpu=None, gpu=None, ram=None, storage=None)
+        super().__init__(brand, model)
         self.cores = cores
         self.clock_speed = clock_speed
 
