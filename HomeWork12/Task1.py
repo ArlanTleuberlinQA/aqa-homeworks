@@ -24,3 +24,4 @@ class TxtToHtmlAdapter:
 if __name__ == "__main__":
     html_result = TxtToHtmlAdapter('./.').convert_to_html()
     print(html_result)
+
