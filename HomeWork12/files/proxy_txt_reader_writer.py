@@ -22,7 +22,7 @@ class ProxyTxtRW(Read, Write):
 
     def write(self):
         if self.__result == self.__real_writer.write():
-            return self.__result
+            print("Текст вже записаний")
         else:
             self.__real_writer.write()
             self.__is_actual = False
@@ -35,3 +35,4 @@ if __name__ == '__main__':
     print(proxy.read())
     proxy.write()
     print(proxy.read())
+    proxy.write()
